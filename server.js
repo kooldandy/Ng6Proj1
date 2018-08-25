@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-
+console.log("PMODS---------------------------------- ", __dirname);
 app.use(express.static('/dist/ng6Proj1'));
 
 app.get('/*', (req, res) => {
